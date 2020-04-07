@@ -21,9 +21,13 @@ rabbitmqctl status
 Подробнее про утилиту rabbitmqctl можно почитать тут: https://www.rabbitmq.com/rabbitmqctl.8.html
 
 Кроме того, можно управлять кроликом через  интерфейс, подробнее тут: https://www.rabbitmq.com/management.html
+
+Для этого надо включить плагин системы управления:
 ```
 rabbitmq-plugins enable rabbitmq_management
-
+```
+Затем созать пользователя и дать ему права:
+```
 rabbitmqctl add_user radmin radmin
 
 rabbitmqctl set_user_tags radmin administrator
@@ -31,3 +35,4 @@ rabbitmqctl set_user_tags radmin administrator
 ```
 После того как включили rabbitmq_management и создали пользователя с нужными првами можем ходить в интерфейс: http://localhost:15672
 
+[!rabbit_mq_homepage.JPG](https://github.com/adm-8/siebel/blob/master/RabbitMQ/img/rabbit_mq_homepage.JPG?raw=true)
