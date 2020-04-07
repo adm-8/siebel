@@ -35,4 +35,4 @@ rabbitmqctl set_user_tags radmin administrator
 ```
 После того как включили rabbitmq_management и создали пользователя с нужными првами можем ходить в интерфейс: http://localhost:15672
 
-[!rabbit_mq_homepage.JPG](https://github.com/adm-8/siebel/blob/master/RabbitMQ/img/rabbit_mq_homepage.JPG?raw=true)
+![rabbit_mq_homepage.JPG](https://github.com/adm-8/siebel/blob/master/RabbitMQ/img/rabbit_mq_homepage.JPG?raw=true)
