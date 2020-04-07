@@ -32,7 +32,20 @@ rabbitmqctl add_user radmin radmin
 
 rabbitmqctl set_user_tags radmin administrator
 
+rabbitmqctl set_permissions -p / radmin ".*" ".*" ".*"
+
 ```
 После того как включили rabbitmq_management и создали пользователя с нужными првами можем ходить в интерфейс: http://localhost:15672
 
 ![rabbit_mq_homepage.JPG](https://github.com/adm-8/siebel/blob/master/RabbitMQ/img/rabbit_mq_homepage.JPG?raw=true)
+
+## Создаем очереди:
+На вход:
+```
+Adapter.CRM.Oppty
+```
+На выход:
+```
+CRM.Adapter.Oppty
+```
+![rabbit_mq_add_queue.JPG](https://github.com/adm-8/siebel/blob/master/RabbitMQ/img/rabbit_mq_add_queue.JPG?raw=true)
